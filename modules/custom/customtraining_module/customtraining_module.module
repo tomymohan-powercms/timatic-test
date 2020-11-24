@@ -1,0 +1,28 @@
+<?php
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Entity\EntityFormInterface;
+use Drupal\block\Entity\Block;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Database\Database;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Cache\Ca
+
+/**
+* Implements hook_entity_type_build().
+*/
+function customtraining_module_entity_type_build(array &$entity_types) {
+  /** @var $entity_types \Drupal\Core\Entity\EntityTypeInterface[] */
+  $entity_types['user']
+    ->setFormClass('trainee_adding', 'Drupal\customtraining_module\Form\TraineeEdit');
+  $entity_types['user']
+    ->setFormClass('trainer_adding', 'Drupal\customtraining_module\Form\TrainerEdit');
+}
+
+
+

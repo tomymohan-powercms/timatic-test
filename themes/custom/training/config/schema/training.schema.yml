@@ -1,0 +1,5 @@
+# Schema for the configuration files of the training theme.
+
+training.settings:
+  type: theme_settings
+  label: 'training settings'

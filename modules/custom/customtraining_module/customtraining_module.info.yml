@@ -1,0 +1,5 @@
+name: Custom training Module
+description: Custom modules for training.
+core: 8.x
+package: Custom
+type: module

@@ -1,0 +1,27 @@
+# customtraining_module.render:
+#   requirements:
+#     _permission: 'access content'
+
+customtraining_module.adduser:
+  path: '/user/add'
+  defaults:
+    _title: 'User Add Form'
+    _form: \Drupal\customtraining_module\Form\UserAddForm
+  requirements:
+    _permission: 'access content'
+
+customtraining_module.edittrainee:
+  path: '/edit/trainee'
+  defaults:
+    _entity_form: 'user.trainee_adding'
+    _title: 'User Edit'
+  requirements:
+    _permission: 'access content'
+
+customtraining_module.edittrainer:
+  path: '/edit/trainer'
+  defaults:
+    _entity_form: 'user.trainer_adding'
+    _title: 'User Edit'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,10 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/training.style.css: {}
+  js:
+    assets/js/training.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
